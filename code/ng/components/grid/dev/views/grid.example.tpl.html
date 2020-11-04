@@ -1,0 +1,34 @@
+<na-grid styles="grid some-class some-class" clientId="activeGrid" ng-controller="ActiveGridController">
+    <na-grid-header>
+        <na-grid-column ng-repeat="header in activeAlertsHeaderTitles track by $index"
+                        data-bind="{{header.fieldName}}"
+                        display-name="{{header.displayName}}"
+                        visible="{{header.visible}}"
+                        sortable="{{header.sortable}}"
+                        filterable="{{header.filterable}}"
+                        styles="{{header.class}}">
+        </na-grid-column>
+    </na-grid-header>
+    <na-grid-body>
+        <ng-grid-row ng-repeat="alerts in activeAlerts track by $index"
+                     row-item="item" styles="alert-item gridRow na-alert-row">
+            <na-grid-cell na-selectable-row></na-grid-cell>
+            <na-grid-cell styles="some-class some-class" data-bind="time.tStart">
+            </na-grid-cell>
+            <na-grid-cell styles="some-class some-class" data-bind="incident"></na-grid-cell>
+            <na-grid-cell styles="some-class some-class" data-bind="textual"></na-grid-cell>
+            <na-grid-cell styles="some-class some-class" data-bind="handleType"></na-grid-cell>
+            <na-grid-cell styles="some-class some-class" data-bind="threatTypes"></na-grid-cell>
+            <na-grid-cell styles="some-class some-class" data-bind="textual"></na-grid-cell>
+            <na-grid-cell styles="some-class some-class" data-bind="source"></na-grid-cell>
+            <na-grid-cell styles="some-class some-class" data-bind="areas"></na-grid-cell>
+            <na-grid-cell styles="some-class some-class" data-bind="NeededTime"></na-grid-cell>
+            <na-grid-cell styles="some-class some-class" data-bind="persistence"></na-grid-cell>
+            <na-grid-cell styles="some-class some-class" data-bind="timeToBroadcast"></na-grid-cell>
+            <na-grid-cell styles="some-class some-class" data-bind="timeToImpact"></na-grid-cell>
+        </ng-grid-row>
+    </na-grid-body>
+    <na-grid-footer>
+        <na-something>...</na-something>
+    </na-grid-footer>
+</na-grid>

@@ -1,0 +1,23 @@
+{
+  "name": "ts-core",
+  "version": "1.0.0",
+  "description": "Typescript examples ",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/StudioNet/ts-core.git"
+  },
+  "keywords": [
+    "ts",
+    "typescript"
+  ],
+  "author": "ey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StudioNet/ts-core/issues"
+  },
+  "homepage": "https://github.com/StudioNet/ts-core#readme"
+}

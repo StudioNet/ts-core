@@ -1,0 +1,12 @@
+<div class="{{rowViewModel.styles}}">
+    <div class="row">
+        <ng-transclude>
+            <div>Row Cells</div>
+        </ng-transclude>
+    </div>
+    <div class="row" ng-show="rowViewModel.withSecondRowContainer && rowViewModel.openContainer">
+        <ng-transclude>
+            <span>I am place holder container...</span>
+        </ng-transclude>
+    </div>
+</div>
